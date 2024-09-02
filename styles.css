@@ -15,7 +15,6 @@ body, html {
     background-image: url('game1.png'); /* Background image */
     background-size: cover;
     background-position: center;
-    filter: blur(5px); /* Blur effect */
     position: relative;
 }
 
@@ -29,13 +28,13 @@ body, html {
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Dark overlay */
     filter: blur(5px);
-    z-index: 1;
+    z-index: 1; /* Overlay below the button */
 }
 
 /* Button styling */
 .login-button {
     position: relative;
-    z-index: 2;
+    z-index: 2; /* Ensure the button is above the blur */
     padding: 15px 30px;
     font-size: 1.5em;
     color: #ff69b4; /* Pink text */
